@@ -3,7 +3,7 @@ apply plugin: "maven-publish"
 ext {
     GROUP_ID = "com.lguplus.mobile.kids"
     ARTIFACT_ID = "purchase"
-    VERSION_NAME = "0.1.0"
+    VERSION_NAME = "0.1.1"
     LIB_NAME = "purchase"
     LIB_DESCRIPTION = "purchase library"
 }
