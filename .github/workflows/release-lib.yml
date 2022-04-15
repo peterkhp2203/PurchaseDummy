@@ -37,7 +37,10 @@ jobs:
         run: ./gradlew :purchase:assemble --stacktrace
 
       - name: 🚀 Publish to Github Package Registry
-        run: ./gradlew :purchase:publish
+        run: |
+          echo ${{ github.actor }}
+          echo ${{ secrets.GITHUB_TOKEN }}
+          ./gradlew :purchase:publish
         env:
           GPR_USER: ${{ github.actor }}
           GPR_KEY: ${{ secrets.GITHUB_TOKEN }}
